@@ -78,7 +78,7 @@ class TimeUtils
 					month_arr = leap?( current_year ) ? days_in_leap_month : days_in_month
 					month_days += month_arr[ current_month ]
 				}
-				year.times {
+				years.times {
 					current_year -= 1
 					year_days += leap?( current_year ) ? 366 : 365
 				}
